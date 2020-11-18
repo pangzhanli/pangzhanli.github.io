@@ -238,7 +238,7 @@ var _hmt = _hmt || [];
                             &nbsp;
                             Realm
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/10/15/oc/Realm/01-Realm%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/">01-Realm简单介绍</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/02-Realm%E4%BF%9D%E5%AD%98%E6%8C%87%E5%AE%9A%E6%A8%A1%E5%9E%8B/">02-Realm保存指定模型</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/03-Realm%E6%9B%B4%E6%96%B0%E6%8C%87%E4%BB%A4/">03-Realm更新指令</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/04-%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE/">04-删除数据</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/05-%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2/">05-数据查询</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/06-%E6%94%AF%E6%8C%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">06-支持的数据类型</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/07-Realm%E5%85%B3%E7%B3%BB/">07-Realm关系</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/10/15/oc/Realm/01-Realm%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/">01-Realm简单介绍</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/02-Realm%E4%BF%9D%E5%AD%98%E6%8C%87%E5%AE%9A%E6%A8%A1%E5%9E%8B/">02-Realm保存指定模型</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/03-Realm%E6%9B%B4%E6%96%B0%E6%8C%87%E4%BB%A4/">03-Realm更新指令</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/04-%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE/">04-删除数据</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/05-%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2/">05-数据查询</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/06-%E6%94%AF%E6%8C%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">06-支持的数据类型</a></li>  <li class="file"><a href="/2020/10/15/oc/Realm/07-Realm%E5%85%B3%E7%B3%BB/">07-Realm关系</a></li>  <li class="file"><a href="/2020/11/18/oc/Realm/08-%E5%B1%9E%E6%80%A7/">08-属性</a></li>  <li class="file"><a href="/2020/11/18/oc/Realm/10-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/">10-数据库操作</a></li>  <li class="file"><a href="/2020/11/18/oc/Realm/09-%E9%80%9A%E7%9F%A5/">09-通知</a></li>  <li class="file"><a href="/2020/11/18/oc/Realm/11-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/">11-数据库迁移</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -431,6 +431,434 @@ var _hmt = _hmt || [];
 </aside>
             
             <section id="main">
+        <article id="post-flutter/flutter框架一/15-豆瓣首页的实现" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/flutter/">flutter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/">flutter框架一</a>
+    </div>
+
+                        <div style="display: flex; float: right;">
+                            
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/15-%E8%B1%86%E7%93%A3%E9%A6%96%E9%A1%B5%E7%9A%84%E5%AE%9E%E7%8E%B0/">
+            <time datetime="2020-09-18T14:12:32.000Z" itemprop="datePublished">2020-09-18</time>
+        </a>
+    </div>
+
+
+                            <div style="margin-left: 10px;">
+                                
+                                    <i class="fa fa-bar-chart"></i>
+                                    <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/15-%E8%B1%86%E7%93%A3%E9%A6%96%E9%A1%B5%E7%9A%84%E5%AE%9E%E7%8E%B0/">15-豆瓣首页的实现</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><p>先来看一下，豆瓣首页的效果</p>
+<p><img src="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/15-%E8%B1%86%E7%93%A3%E9%A6%96%E9%A1%B5%E7%9A%84%E5%AE%9E%E7%8E%B0/15_001.png" alt="图1"></p>
+<p>通过上边的页面，我们可以通过下边的步骤，进行实现：</p>
+<ul>
+<li>1， 需要实现底部的tabbar</li>
+<p>
+                
+            
+        
+        
+            </div>
+            <div class="article-more-link">
+                <a href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/15-%E8%B1%86%E7%93%A3%E9%A6%96%E9%A1%B5%E7%9A%84%E5%AE%9E%E7%8E%B0/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+            <div style="display: inline-block;">
+                
+            </div>
+            <div class="meta" style="float: right;">
+            
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/commits/master/source/_posts/flutter/flutter框架一/15-豆瓣首页的实现.md' target="_blank" rel="noopener"> History </a>
+                </div>
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/raw/master/source/_posts/flutter/flutter框架一/15-豆瓣首页的实现.md' target="_blank" rel="noopener"> Source </a>
+                </div>
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/edit/master/source/_posts/flutter/flutter框架一/15-豆瓣首页的实现.md' target="_blank" rel="noopener"> Edit </a>
+                </div>
+            
+            </div>
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-flutter/flutter框架一/14-虚线和星星评分" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/flutter/">flutter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/">flutter框架一</a>
+    </div>
+
+                        <div style="display: flex; float: right;">
+                            
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/14-%E8%99%9A%E7%BA%BF%E5%92%8C%E6%98%9F%E6%98%9F%E8%AF%84%E5%88%86/">
+            <time datetime="2020-09-18T14:12:21.000Z" itemprop="datePublished">2020-09-18</time>
+        </a>
+    </div>
+
+
+                            <div style="margin-left: 10px;">
+                                
+                                    <i class="fa fa-bar-chart"></i>
+                                    <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/14-%E8%99%9A%E7%BA%BF%E5%92%8C%E6%98%9F%E6%98%9F%E8%AF%84%E5%88%86/">14-虚线和星星评分</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><p>我们需要封装的组件效果：</p>
+<p><img src="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/14-%E8%99%9A%E7%BA%BF%E5%92%8C%E6%98%9F%E6%98%9F%E8%AF%84%E5%88%86/14_001.png" alt="图1"></p>
+<h1 id="一，虚线的封装"><a href="#一，虚线的封装" class="headerlink" title="一，虚线的封装"></a>一，虚线的封装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">import &#39;package:flutter&#x2F;material.dart&#39;;</span><br><span class="line"></span><br><span class="line">class HYDashedLine extends StatelessWidget &#123;</span><br><span class="line">  final Axis axis;</span><br><span class="line">  final double dashedWidth;</span><br><span class="line">  final double dashedHeight;</span><br><span class="line">  final int count;</span><br><span class="line">  final Color color;</span><br><span class="line"></span><br><span class="line">  HYDashedLine(&#123;</span><br><span class="line">    this.axis &#x3D; Axis.horizontal,</span><br><span class="line">    this.dashedWidth &#x3D; 1,</span><br><span class="line">    this.dashedHeight &#x3D; 1,</span><br><span class="line">    this.count &#x3D; 10,</span><br><span class="line">    this.color &#x3D; Colors.red</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Flex(</span><br><span class="line">      direction: this.axis,</span><br><span class="line">      mainAxisAlignment: MainAxisAlignment.spaceBetween,</span><br><span class="line">      children: List.generate(this.count, (_)&#123;</span><br><span class="line">        return SizedBox(</span><br><span class="line">          width: this.dashedWidth,</span><br><span class="line">          height: this.dashedHeight,</span><br><span class="line">          child: DecoratedBox(</span><br><span class="line">            decoration:BoxDecoration(color: this.color),</span><br><span class="line">          ),</span><br><span class="line">        );</span><br><span class="line">      &#125;),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="二，-星星评分的封装"><a href="#二，-星星评分的封装" class="headerlink" title="二， 星星评分的封装"></a>二， 星星评分的封装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br></pre></td><td class="code"><pre><span class="line">import &#39;package:flutter&#x2F;cupertino.dart&#39;;</span><br><span class="line">import &#39;package:flutter&#x2F;material.dart&#39;;</span><br><span class="line"></span><br><span class="line">&#x2F;**</span><br><span class="line"> *  星星评分</span><br><span class="line"> *&#x2F;</span><br><span class="line">class HYStarRating extends StatefulWidget &#123;</span><br><span class="line">  final double rating;    &#x2F;&#x2F;当前分数</span><br><span class="line">  final double maxRating; &#x2F;&#x2F;最大分数</span><br><span class="line">  final int count;        &#x2F;&#x2F;星星数量</span><br><span class="line">  final double size;         &#x2F;&#x2F;星星的大小</span><br><span class="line">  final Color unSelectedColor;  &#x2F;&#x2F;未选中的颜色</span><br><span class="line">  final Color selectedColor;    &#x2F;&#x2F;选中的颜色</span><br><span class="line"></span><br><span class="line">  final Widget unSelectedImage;   &#x2F;&#x2F;未选中的图片</span><br><span class="line">  final Widget selectedImage;   &#x2F;&#x2F;选中的图片</span><br><span class="line"></span><br><span class="line">  HYStarRating(&#123;</span><br><span class="line">    @required this.rating,</span><br><span class="line">    this.maxRating &#x3D; 10,</span><br><span class="line">    this.count &#x3D; 5,</span><br><span class="line">    this.size &#x3D; 30,</span><br><span class="line">    this.unSelectedColor &#x3D; const Color(0xffbbbbbb),</span><br><span class="line">    this.selectedColor &#x3D; const Color(0xffff0000),</span><br><span class="line">    Widget unSelectedImage,</span><br><span class="line">    Widget selectedImage,</span><br><span class="line">  &#125;):</span><br><span class="line">        this.unSelectedImage &#x3D; unSelectedImage ?? Icon(Icons.star_border,size: size,color: unSelectedColor,),</span><br><span class="line">        this.selectedImage &#x3D; selectedImage ?? Icon(Icons.star,size: size, color: selectedColor,);</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  _HYStarRatingState createState() &#x3D;&gt; _HYStarRatingState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class _HYStarRatingState extends State&lt;HYStarRating&gt; &#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Stack(</span><br><span class="line">      children: &lt;Widget&gt;[</span><br><span class="line">        Row(</span><br><span class="line">          mainAxisSize: MainAxisSize.min,</span><br><span class="line">          children: buildUnSelectedStar(),</span><br><span class="line">        ),</span><br><span class="line">        Row(</span><br><span class="line">          mainAxisSize: MainAxisSize.min,</span><br><span class="line">          children: buildSelectedStar(),</span><br><span class="line">        ),</span><br><span class="line">      ],</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F;未选中的星星组件列表集合</span><br><span class="line">  List&lt;Widget&gt; buildUnSelectedStar()&#123;</span><br><span class="line">    return List.generate(this.widget.count, (index)&#123;</span><br><span class="line">      return widget.unSelectedImage;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F;选中的星星组件列表集合</span><br><span class="line">  List&lt;Widget&gt; buildSelectedStar()&#123;</span><br><span class="line">    final star &#x3D; widget.selectedImage;</span><br><span class="line">    &#x2F;&#x2F;1. 创建stars</span><br><span class="line">    List&lt;Widget&gt; stars &#x3D; [];</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;2. 创建满填充的star</span><br><span class="line">    double oneValue &#x3D; widget.maxRating &#x2F; widget.count;</span><br><span class="line">    int entireCount &#x3D; (widget.rating &#x2F; oneValue).floor();  &#x2F;&#x2F;floor(): 向下取整</span><br><span class="line">    for(int i &#x3D; 0; i &lt; entireCount; i++)&#123;</span><br><span class="line">      stars.add(star);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;3. 创建部分填充star</span><br><span class="line">    double leftWidth &#x3D; ((widget.rating - oneValue * entireCount)&#x2F;oneValue) * widget.size;</span><br><span class="line"></span><br><span class="line">    final halfStar &#x3D; ClipRect(</span><br><span class="line">      clipper: HYStarClipper(leftWidth),</span><br><span class="line">      child: star,</span><br><span class="line">    );</span><br><span class="line">    stars.add(halfStar);</span><br><span class="line"></span><br><span class="line">    return stars;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class HYStarClipper extends CustomClipper&lt;Rect&gt; &#123;</span><br><span class="line">  double width;</span><br><span class="line"></span><br><span class="line">  HYStarClipper(this.width);</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Rect getClip(Size size) &#123;</span><br><span class="line">    return Rect.fromLTRB(0, 0, width, size.height);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F;是否重新裁剪</span><br><span class="line">  @override</span><br><span class="line">  bool shouldReclip(HYStarClipper oldClipper) &#123;</span><br><span class="line">    &#x2F;&#x2F;宽度不一致，重新裁剪</span><br><span class="line">    return oldClipper.width !&#x3D; this.width;</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>
+                
+            
+        
+        
+            </div>
+            <div class="article-more-link">
+                <a href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/14-%E8%99%9A%E7%BA%BF%E5%92%8C%E6%98%9F%E6%98%9F%E8%AF%84%E5%88%86/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+            <div style="display: inline-block;">
+                
+            </div>
+            <div class="meta" style="float: right;">
+            
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/commits/master/source/_posts/flutter/flutter框架一/14-虚线和星星评分.md' target="_blank" rel="noopener"> History </a>
+                </div>
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/raw/master/source/_posts/flutter/flutter框架一/14-虚线和星星评分.md' target="_blank" rel="noopener"> Source </a>
+                </div>
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/edit/master/source/_posts/flutter/flutter框架一/14-虚线和星星评分.md' target="_blank" rel="noopener"> Edit </a>
+                </div>
+            
+            </div>
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-flutter/flutter框架一/13-Dart中的异步" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/flutter/">flutter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/">flutter框架一</a>
+    </div>
+
+                        <div style="display: flex; float: right;">
+                            
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/13-Dart%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5/">
+            <time datetime="2020-09-18T14:12:12.000Z" itemprop="datePublished">2020-09-18</time>
+        </a>
+    </div>
+
+
+                            <div style="margin-left: 10px;">
+                                
+                                    <i class="fa fa-bar-chart"></i>
+                                    <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/13-Dart%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5/">13-Dart中的异步</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="一-Dart的异步模型"><a href="#一-Dart的异步模型" class="headerlink" title="一. Dart的异步模型"></a>一. Dart的异步模型</h1><h3 id="1-1-Dart是单线程的"><a href="#1-1-Dart是单线程的" class="headerlink" title="1.1. Dart是单线程的"></a>1.1. Dart是单线程的</h3><h5 id="1-1-1-程序中的耗时操作"><a href="#1-1-1-程序中的耗时操作" class="headerlink" title="1.1.1. 程序中的耗时操作"></a>1.1.1. 程序中的耗时操作</h5><p>开发中的耗时操作：</p>
+<ul>
+<li><p>在开发中，我们经常会遇到一些耗时的操作需要完成，比如网络请求、文件读取等等；</p>
+</li>
+<li><p>如果我们的主线程一直在等待这些耗时的操作完成，那么就会进行阻塞，无法响应其它事件，比如用户的点击；</p>
+<p>
+                
+            
+        
+        
+            </div>
+            <div class="article-more-link">
+                <a href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/13-Dart%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+            <div style="display: inline-block;">
+                
+            </div>
+            <div class="meta" style="float: right;">
+            
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/commits/master/source/_posts/flutter/flutter框架一/13-Dart中的异步.md' target="_blank" rel="noopener"> History </a>
+                </div>
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/raw/master/source/_posts/flutter/flutter框架一/13-Dart中的异步.md' target="_blank" rel="noopener"> Source </a>
+                </div>
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/edit/master/source/_posts/flutter/flutter框架一/13-Dart中的异步.md' target="_blank" rel="noopener"> Edit </a>
+                </div>
+            
+            </div>
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-flutter/flutter框架一/12-滚动组件的使用" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/flutter/">flutter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/">flutter框架一</a>
+    </div>
+
+                        <div style="display: flex; float: right;">
+                            
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/12-%E6%BB%9A%E5%8A%A8%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/">
+            <time datetime="2020-09-18T14:12:02.000Z" itemprop="datePublished">2020-09-18</time>
+        </a>
+    </div>
+
+
+                            <div style="margin-left: 10px;">
+                                
+                                    <i class="fa fa-bar-chart"></i>
+                                    <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/12-%E6%BB%9A%E5%8A%A8%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/">12-滚动组件的使用</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="一：ListView组件的使用"><a href="#一：ListView组件的使用" class="headerlink" title="一：ListView组件的使用"></a>一：ListView组件的使用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line">import &#39;package:flutter&#x2F;material.dart&#39;;</span><br><span class="line"></span><br><span class="line">void main() &#123;</span><br><span class="line">  runApp(MyApp());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class MyApp extends StatelessWidget &#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return MaterialApp(</span><br><span class="line">      debugShowCheckedModeBanner: false,</span><br><span class="line">      home: HYHomePage(),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class HYHomePage extends StatelessWidget &#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(&quot;富文本&quot;),</span><br><span class="line">      ),</span><br><span class="line">      body: HYContentBody(),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class HYContentBody extends StatelessWidget &#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return ListView.separated(</span><br><span class="line">        itemBuilder: (BuildContext ctx, int index)&#123;</span><br><span class="line">          return ListTile(</span><br><span class="line">            title: Text(&quot;联系人$index&quot;,style: TextStyle(backgroundColor: Colors.blue),),</span><br><span class="line">          );</span><br><span class="line">        &#125;,</span><br><span class="line">        separatorBuilder: (BuildContext ctx, int index)&#123;</span><br><span class="line">          return Divider(</span><br><span class="line">            color: Colors.red,</span><br><span class="line">            indent: 60,   &#x2F;&#x2F;前边的距离</span><br><span class="line">            endIndent: 100,   &#x2F;&#x2F;后边的距离</span><br><span class="line">            height: 5,       &#x2F;&#x2F;分割线所占的高度</span><br><span class="line">            thickness: 10,    &#x2F;&#x2F;分割线的厚度，即高度</span><br><span class="line">          );</span><br><span class="line">        &#125;,</span><br><span class="line">        itemCount: 100);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class HYContentBody3 extends StatelessWidget &#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return ListView.builder(</span><br><span class="line">        itemExtent: 80,   &#x2F;&#x2F;项的高度，或者宽度</span><br><span class="line">&#x2F;&#x2F;        scrollDirection: Axis.horizontal,</span><br><span class="line">&#x2F;&#x2F;        reverse: true,   &#x2F;&#x2F;列表数据反转</span><br><span class="line">        itemCount: 100,</span><br><span class="line">        itemBuilder: (BuildContext ctx, int index) &#123;</span><br><span class="line">          return ListTile(</span><br><span class="line">            leading: Icon(Icons.people),</span><br><span class="line">            trailing: Icon(Icons.delete),</span><br><span class="line">            title: Text(&quot;联系人 $index&quot;),</span><br><span class="line">            subtitle: Text(&quot;电话号码 18811112222&quot;),</span><br><span class="line">          );</span><br><span class="line">        &#125;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class HYContentBody2 extends StatelessWidget &#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return ListView(</span><br><span class="line">      children: List.generate(100, (index)&#123;</span><br><span class="line">        return Text(&quot;Hello world $index&quot;,style: TextStyle(fontSize: 30),);</span><br><span class="line">      &#125;),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class HYContentBody1 extends StatelessWidget &#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return ListView(</span><br><span class="line">      children: &lt;Widget&gt;[</span><br><span class="line">        Text(&quot;hello world 1&quot;),</span><br><span class="line">        Text(&quot;hello world 2&quot;),</span><br><span class="line">        Text(&quot;hello world 3&quot;),</span><br><span class="line">      ],</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="二：GridView的使用"><a href="#二：GridView的使用" class="headerlink" title="二：GridView的使用"></a>二：GridView的使用</h1><p>效果图：</p>
+<p><img src="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/12-%E6%BB%9A%E5%8A%A8%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/12_001.png" alt="图1"></p>
+<p>实现代码：</p>
+<p>
+                
+            
+        
+        
+            </div>
+            <div class="article-more-link">
+                <a href="/2020/09/18/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/12-%E6%BB%9A%E5%8A%A8%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+            <div style="display: inline-block;">
+                
+            </div>
+            <div class="meta" style="float: right;">
+            
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/commits/master/source/_posts/flutter/flutter框架一/12-滚动组件的使用.md' target="_blank" rel="noopener"> History </a>
+                </div>
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/raw/master/source/_posts/flutter/flutter框架一/12-滚动组件的使用.md' target="_blank" rel="noopener"> Source </a>
+                </div>
+                <div class="article-meta-button">
+                    <a href='https://gitee.com/wencaizhang/wiki/edit/master/source/_posts/flutter/flutter框架一/12-滚动组件的使用.md' target="_blank" rel="noopener"> Edit </a>
+                </div>
+            
+            </div>
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-flutter/flutter框架一/11-基础组件的使用" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1060,434 +1488,6 @@ var _hmt = _hmt || [];
                 </div>
                 <div class="article-meta-button">
                     <a href='https://gitee.com/wencaizhang/wiki/edit/master/source/_posts/flutter/flutter框架一/06-Dart-二.md' target="_blank" rel="noopener"> Edit </a>
-                </div>
-            
-            </div>
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-flutter/flutter框架一/05-Dart-一" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/flutter/">flutter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/">flutter框架一</a>
-    </div>
-
-                        <div style="display: flex; float: right;">
-                            
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/05-Dart-%E4%B8%80/">
-            <time datetime="2020-09-02T12:37:33.000Z" itemprop="datePublished">2020-09-02</time>
-        </a>
-    </div>
-
-
-                            <div style="margin-left: 10px;">
-                                
-                                    <i class="fa fa-bar-chart"></i>
-                                    <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>
-                                
-                            </div>
-                        </div>
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/05-Dart-%E4%B8%80/">05-Dart(一)</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h1 id="一-Dart介绍和安装"><a href="#一-Dart介绍和安装" class="headerlink" title="一. Dart介绍和安装"></a>一. Dart介绍和安装</h1><h3 id="1-1-认识Dart"><a href="#1-1-认识Dart" class="headerlink" title="1.1. 认识Dart"></a>1.1. 认识Dart</h3><p>Google为Flutter选择了Dart就已经是既定的事实，无论你多么想用你熟悉的语言，比如JavaScript、Java、Swift、C++等来开发Flutter，至少目前都是不可以的。</p>
-<p>在讲解Dart的过程中，我会假定你已经有一定的编程语言基础，比如JavaScript、Java、Python、C++等。</p>
-<p>其实如果你对编程语言足够的自信，Dart的学习过程甚至可以直接忽略：</p>
-<ul>
-<li>因为你学过N种编程语言之后，你会发现他们的差异是并不大；</li>
-<p>
-                
-            
-        
-        
-            </div>
-            <div class="article-more-link">
-                <a href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/05-Dart-%E4%B8%80/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-            <div style="display: inline-block;">
-                
-            </div>
-            <div class="meta" style="float: right;">
-            
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/commits/master/source/_posts/flutter/flutter框架一/05-Dart-一.md' target="_blank" rel="noopener"> History </a>
-                </div>
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/raw/master/source/_posts/flutter/flutter框架一/05-Dart-一.md' target="_blank" rel="noopener"> Source </a>
-                </div>
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/edit/master/source/_posts/flutter/flutter框架一/05-Dart-一.md' target="_blank" rel="noopener"> Edit </a>
-                </div>
-            
-            </div>
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-flutter/flutter框架一/04-Android-Studio-中下载Android-SDK的两种方式" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/flutter/">flutter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/">flutter框架一</a>
-    </div>
-
-                        <div style="display: flex; float: right;">
-                            
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/04-Android-Studio-%E4%B8%AD%E4%B8%8B%E8%BD%BDAndroid-SDK%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/">
-            <time datetime="2020-09-02T12:37:06.000Z" itemprop="datePublished">2020-09-02</time>
-        </a>
-    </div>
-
-
-                            <div style="margin-left: 10px;">
-                                
-                                    <i class="fa fa-bar-chart"></i>
-                                    <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>
-                                
-                            </div>
-                        </div>
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/04-Android-Studio-%E4%B8%AD%E4%B8%8B%E8%BD%BDAndroid-SDK%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/">04-Android Studio 中下载Android SDK的两种方式</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h1 id="方式一：网站下载：https-androidsdkmanager-azurewebsites-net-SDKPlatform"><a href="#方式一：网站下载：https-androidsdkmanager-azurewebsites-net-SDKPlatform" class="headerlink" title="方式一：网站下载：https://androidsdkmanager.azurewebsites.net/SDKPlatform"></a>方式一：网站下载：<a href="https://androidsdkmanager.azurewebsites.net/SDKPlatform" target="_blank" rel="noopener">https://androidsdkmanager.azurewebsites.net/SDKPlatform</a></h1><h1 id="方式二、设置HTTP-Proxy"><a href="#方式二、设置HTTP-Proxy" class="headerlink" title="方式二、设置HTTP Proxy"></a>方式二、设置HTTP Proxy</h1><ol>
-<li><p>打开Settings</p>
-</li>
-<li><p>点击HTTP Proxy，选择Manual proxy configuration：</p>
-<pre><code>设置 Host name 为：mirrors.opencas.cn(备用服务器地址：mirrors.opencas.org mirrors.opencas.ac.cn)</code></pre><p> 设置 Port number 为：80</p>
-<p>
-                
-            
-        
-        
-            </div>
-            <div class="article-more-link">
-                <a href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/04-Android-Studio-%E4%B8%AD%E4%B8%8B%E8%BD%BDAndroid-SDK%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-            <div style="display: inline-block;">
-                
-            </div>
-            <div class="meta" style="float: right;">
-            
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/commits/master/source/_posts/flutter/flutter框架一/04-Android-Studio-中下载Android-SDK的两种方式.md' target="_blank" rel="noopener"> History </a>
-                </div>
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/raw/master/source/_posts/flutter/flutter框架一/04-Android-Studio-中下载Android-SDK的两种方式.md' target="_blank" rel="noopener"> Source </a>
-                </div>
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/edit/master/source/_posts/flutter/flutter框架一/04-Android-Studio-中下载Android-SDK的两种方式.md' target="_blank" rel="noopener"> Edit </a>
-                </div>
-            
-            </div>
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-flutter/flutter框架一/03-Hello-Flutter" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/flutter/">flutter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/">flutter框架一</a>
-    </div>
-
-                        <div style="display: flex; float: right;">
-                            
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/03-Hello-Flutter/">
-            <time datetime="2020-09-02T12:36:52.000Z" itemprop="datePublished">2020-09-02</time>
-        </a>
-    </div>
-
-
-                            <div style="margin-left: 10px;">
-                                
-                                    <i class="fa fa-bar-chart"></i>
-                                    <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>
-                                
-                            </div>
-                        </div>
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/03-Hello-Flutter/">03-Hello Flutter</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h1 id="一：创建Flutter应用"><a href="#一：创建Flutter应用" class="headerlink" title="一：创建Flutter应用"></a>一：创建Flutter应用</h1><h3 id="1-1-有两种方式创建Flutter应用：通过终端，通过编辑器。"><a href="#1-1-有两种方式创建Flutter应用：通过终端，通过编辑器。" class="headerlink" title="1.1.  有两种方式创建Flutter应用：通过终端，通过编辑器。"></a>1.1.  有两种方式创建Flutter应用：通过终端，通过编辑器。</h3><p>这里我先选择通过终端（Windows和macOS都是一样的命令）</p>
-<p>打开终端 - 执行如下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter create helloflutter</span><br></pre></td></tr></table></figure>
-
-<p>注意：后面的名称不能由特殊符号，也不能由大写</p>
-<p>
-                
-            
-        
-        
-            </div>
-            <div class="article-more-link">
-                <a href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/03-Hello-Flutter/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-            <div style="display: inline-block;">
-                
-            </div>
-            <div class="meta" style="float: right;">
-            
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/commits/master/source/_posts/flutter/flutter框架一/03-Hello-Flutter.md' target="_blank" rel="noopener"> History </a>
-                </div>
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/raw/master/source/_posts/flutter/flutter框架一/03-Hello-Flutter.md' target="_blank" rel="noopener"> Source </a>
-                </div>
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/edit/master/source/_posts/flutter/flutter框架一/03-Hello-Flutter.md' target="_blank" rel="noopener"> Edit </a>
-                </div>
-            
-            </div>
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-flutter/flutter框架一/02-flutter之环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/flutter/">flutter</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/">flutter框架一</a>
-    </div>
-
-                        <div style="display: flex; float: right;">
-                            
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/02-flutter%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
-            <time datetime="2020-09-02T12:36:34.000Z" itemprop="datePublished">2020-09-02</time>
-        </a>
-    </div>
-
-
-                            <div style="margin-left: 10px;">
-                                
-                                    <i class="fa fa-bar-chart"></i>
-                                    <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>
-                                
-                            </div>
-                        </div>
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/02-flutter%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">02-flutter之环境搭建</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p>Hello Flutter</p>
-<p>这个章节我们学习如何安装Flutter，并且写第一个Flutter程序。</p>
-<p>之后在iOS模拟器和Android模拟器上分别跑起来我们的应用程序（之后我会讲解如何跑在真机上）。</p>
-<p>当然，这个程序中的很多代码你可能并不是特别理解，里面涉及到一些dart知识，也涉及到一些flutter的东西。这些都没有关系，我们的目的是把这个工程跑起来，就表示你的环境是OK的。</p>
-<h1 id="一-环境搭建"><a href="#一-环境搭建" class="headerlink" title="一. 环境搭建"></a>一. 环境搭建</h1><p>环境搭建有点麻烦，特别是Android环境的安装，大家耐心安装，有任何问题可以添加我的微信 372623326</p>
-<p>
-                
-            
-        
-        
-            </div>
-            <div class="article-more-link">
-                <a href="/2020/09/02/flutter/flutter%E6%A1%86%E6%9E%B6%E4%B8%80/02-flutter%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-            <div style="display: inline-block;">
-                
-            </div>
-            <div class="meta" style="float: right;">
-            
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/commits/master/source/_posts/flutter/flutter框架一/02-flutter之环境搭建.md' target="_blank" rel="noopener"> History </a>
-                </div>
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/raw/master/source/_posts/flutter/flutter框架一/02-flutter之环境搭建.md' target="_blank" rel="noopener"> Source </a>
-                </div>
-                <div class="article-meta-button">
-                    <a href='https://gitee.com/wencaizhang/wiki/edit/master/source/_posts/flutter/flutter框架一/02-flutter之环境搭建.md' target="_blank" rel="noopener"> Edit </a>
                 </div>
             
             </div>
