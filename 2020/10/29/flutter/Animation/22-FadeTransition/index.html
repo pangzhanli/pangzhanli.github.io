@@ -9,17 +9,19 @@
         <meta name="keywords" content="动画" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="参考资料">
+    <meta name="description" content="FadeTransition提供了快速构建渐隐渐显动画的组件 效果：  代码: 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647class GMExampleFadeTransitionTest extends StatefulWidget &amp;#123;  GMExampleF">
 <meta property="og:type" content="article">
 <meta property="og:title" content="22-FadeTransition">
 <meta property="og:url" content="http://pangzhanli.top/2020/10/29/flutter/Animation/22-FadeTransition/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="参考资料">
+<meta property="og:description" content="FadeTransition提供了快速构建渐隐渐显动画的组件 效果：  代码: 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647class GMExampleFadeTransitionTest extends StatefulWidget &amp;#123;  GMExampleF">
+<meta property="og:image" content="http://pangzhanli.top/2020/10/29/flutter/Animation/22-FadeTransition/22-FadeTransition.gif">
 <meta property="article:published_time" content="2020-10-29T06:43:45.000Z">
-<meta property="article:modified_time" content="2020-11-11T02:34:08.501Z">
+<meta property="article:modified_time" content="2020-11-26T11:27:29.533Z">
 <meta property="article:author" content="庞占立">
 <meta property="article:tag" content="动画">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://pangzhanli.top/2020/10/29/flutter/Animation/22-FadeTransition/22-FadeTransition.gif">
     
 
     
@@ -110,7 +112,7 @@ var _hmt = _hmt || [];
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -129,10 +131,10 @@ var _hmt = _hmt || [];
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Articles',
+            POSTS: 'Entradas',
             PAGES: 'Pages',
-            CATEGORIES: 'Catégories',
-            TAGS: 'Tags',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -165,7 +167,7 @@ var _hmt = _hmt || [];
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
     </div>
 
                 </td>
@@ -182,7 +184,7 @@ var _hmt = _hmt || [];
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>Catégories</span>
+            <span>Categorias</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -349,7 +351,7 @@ var _hmt = _hmt || [];
                             &nbsp;
                             动画组件
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/10/29/flutter/Animation/02-AlignTransition/">02-AlignTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/01-AnimatedBuilder/">01-AnimatedBuilder</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/03-AnimatedOpacity/">03-AnimatedOpacity</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/04-AnimatedAlign/">04-AnimatedAlign</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/05-AnimatedPadding/">05-AnimatedPadding</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/06-AnimatedCrossFade/">06-AnimatedCrossFade</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/07-AnimatedContainer/">07-AnimatedContainer</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/08-AnimatedPositioned/">08-AnimatedPositioned</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/10-AnimatedSwitcher/">10-AnimatedSwitcher</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/09-AnimatedPositionedDirectional/">09-AnimatedPositionedDirectional</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/12-TweenAnimationBuilder/">12-TweenAnimationBuilder</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/11-AnimatedIcon/">11-AnimatedIcon</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/13-DecoratedBoxTransition/">13-DecoratedBoxTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/14-DefaultTextStyleTransition/">14-DefaultTextStyleTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/16-PositionedTransition/">16-PositionedTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/15-AnimatedDefaultTextStyle/">15-AnimatedDefaultTextStyle</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/17-RelativePositionedTransition/">17-RelativePositionedTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/18-RotationTransition/">18-RotationTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/20-SizeTransition/">20-SizeTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/19-ScaleTransition/">19-ScaleTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/21-SlideTransition/">21-SlideTransition</a></li>  <li class="file active"><a href="/2020/10/29/flutter/Animation/22-FadeTransition/">22-FadeTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/23-AnimatedModalBarrier/">23-AnimatedModalBarrier</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/24-AnimatedList/">24-AnimatedList</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/10/29/flutter/Animation/02-AlignTransition/">02-AlignTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/01-AnimatedBuilder/">01-AnimatedBuilder</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/03-AnimatedOpacity/">03-AnimatedOpacity</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/04-AnimatedAlign/">04-AnimatedAlign</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/05-AnimatedPadding/">05-AnimatedPadding</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/06-AnimatedCrossFade/">06-AnimatedCrossFade</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/07-AnimatedContainer/">07-AnimatedContainer</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/08-AnimatedPositioned/">08-AnimatedPositioned</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/10-AnimatedSwitcher/">10-AnimatedSwitcher</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/09-AnimatedPositionedDirectional/">09-AnimatedPositionedDirectional</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/12-TweenAnimationBuilder/">12-TweenAnimationBuilder</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/11-AnimatedIcon/">11-AnimatedIcon</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/13-DecoratedBoxTransition/">13-DecoratedBoxTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/14-DefaultTextStyleTransition/">14-DefaultTextStyleTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/16-PositionedTransition/">16-PositionedTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/15-AnimatedDefaultTextStyle/">15-AnimatedDefaultTextStyle</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/17-RelativePositionedTransition/">17-RelativePositionedTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/18-RotationTransition/">18-RotationTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/20-SizeTransition/">20-SizeTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/19-ScaleTransition/">19-ScaleTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/21-SlideTransition/">21-SlideTransition</a></li>  <li class="file active"><a href="/2020/10/29/flutter/Animation/22-FadeTransition/">22-FadeTransition</a></li>  <li class="file"><a href="/2020/10/29/flutter/Animation/23-AnimatedModalBarrier/">23-AnimatedModalBarrier</a></li>  <li class="file"><a href="/2020/11/26/flutter/Animation/%E4%BA%A4%E7%BB%87%E5%8A%A8%E7%94%BB/">交织动画</a></li>  <li class="file"><a href="/2020/11/26/flutter/Animation/%E5%8A%A8%E7%94%BB%E5%AE%B9%E5%99%A8/">动画容器</a></li>  <li class="file"><a href="/2020/11/26/flutter/Animation/Hero%E5%8A%A8%E7%94%BB/">Hero动画</a></li>  <li class="file"><a href="/2020/11/26/flutter/Animation/%E5%9B%BE%E7%89%87%E5%8A%A8%E7%94%BB/">图片动画</a></li>  <li class="file"><a href="/2020/11/26/flutter/Animation/%E5%BF%83%E5%BD%A2%E8%B7%B3%E5%8A%A8/">心形跳动</a></li>  <li class="file"><a href="/2020/11/26/flutter/Animation/%E7%8E%AF%E5%BD%A2%E5%8A%A8%E7%94%BB/">环形动画</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -489,19 +491,17 @@ var _hmt = _hmt || [];
         
             
                 <div id="toc" class="toc-article">
-                <strong class="toc-title">Catalogue</strong>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">1.</span> <span class="toc-text">参考资料</span></a></li></ol>
+                <strong class="toc-title">Catálogo</strong>
+                    
                 </div>
             
         
         
-            <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote>
-<ul>
-<li><a href></a></li>
-<li><a href></a></li>
-</ul>
-</blockquote>
-
+            <p>FadeTransition提供了快速构建渐隐渐显动画的组件</p>
+<p>效果：</p>
+<p><img src="/2020/10/29/flutter/Animation/22-FadeTransition/22-FadeTransition.gif" alt></p>
+<p>代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">class GMExampleFadeTransitionTest extends StatefulWidget &#123;</span><br><span class="line">  GMExampleFadeTransitionTest(&#123;Key key&#125;) : super(key: key);</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  _GMExampleFadeTransitionTestState createState() &#x3D;&gt;</span><br><span class="line">      _GMExampleFadeTransitionTestState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class _GMExampleFadeTransitionTestState</span><br><span class="line">    extends State&lt;GMExampleFadeTransitionTest&gt;</span><br><span class="line">    with SingleTickerProviderStateMixin &#123;</span><br><span class="line">  AnimationController _animationController;</span><br><span class="line">  Animation&lt;double&gt; _animation;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  void initState() &#123;</span><br><span class="line">    _animationController &#x3D;</span><br><span class="line">        AnimationController(duration: Duration(seconds: 1), vsync: this);</span><br><span class="line"></span><br><span class="line">    _animation &#x3D; Tween(begin: 0.0, end: 1.0).animate(_animationController);</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;开始动画</span><br><span class="line">    _animationController.forward();</span><br><span class="line"></span><br><span class="line">    super.initState();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Center(</span><br><span class="line">      child: FadeTransition(</span><br><span class="line">        opacity: _animation,</span><br><span class="line">        child: Container(</span><br><span class="line">          color: Colors.red,</span><br><span class="line">          width: 100,</span><br><span class="line">          height: 100,</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  void dispose() &#123;</span><br><span class="line">    _animationController.dispose();</span><br><span class="line">    super.dispose();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
             </div>
         
         <footer class="article-footer">
@@ -535,7 +535,7 @@ var _hmt = _hmt || [];
 <nav id="article-nav">
     
         <a href="/2020/10/29/flutter/Animation/23-AnimatedModalBarrier/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Plus récent</strong>
+            <strong class="article-nav-caption">Más nuevo</strong>
             <div class="article-nav-title">
                 
                     23-AnimatedModalBarrier
@@ -545,7 +545,7 @@ var _hmt = _hmt || [];
     
     
         <a href="/2020/10/29/flutter/Animation/21-SlideTransition/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Plus ancien</strong>
+            <strong class="article-nav-caption">Más viejo</strong>
             <div class="article-nav-title">21-SlideTransition</div>
         </a>
     
